@@ -27,4 +27,5 @@ elif [[ "${version}" = "master" ]]; then
 	)
 fi
 
+cd "${WERCKER_ROOT}"
 "${themis_dir}/bin/themis" --reporter "${reporter}" "${args[@]}"
