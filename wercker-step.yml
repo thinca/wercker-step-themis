@@ -1,0 +1,20 @@
+name: themis
+version: 1.0.0
+description: Run test for Vim script with themis
+keywords:
+  - vim
+  - test
+  - themis
+properties:
+  version:
+    type: string
+    required: false
+  test-dir:
+    type: string
+    required: false
+  reporter:
+    type: string
+    required: false
+  runtimepath:
+    type: string
+    required: false
