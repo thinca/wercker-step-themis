@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eu
+
 version="${WERCKER_THEMIS_VERSION:-master}"
 test_dir="${WERCKER_THEMIS_TEST_DIR}"
 reporter="${WERCKER_THEMIS_REPORTER:-dot}"
