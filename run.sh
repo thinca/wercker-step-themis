@@ -17,7 +17,7 @@ add_rtp() {
 	done
 }
 add_rtp "${runtimepath}"
-cmd_args+="${test_dir}"
+[[ -n "${test_dir}" ]] && cmd_args+=("${test_dir}")
 
 if [[ ! -d "${themis_dir}" ]]; then
 	mkdir -p "${themis_dir}"
