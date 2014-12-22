@@ -19,7 +19,7 @@ cmd_args+="${test_dir}"
 
 if [[ ! -d "${themis_dir}" ]]; then
 	mkdir -p "${themis_dir}"
-	git clone "https://github.com/thinca/vim-themis" --branch "${version}" --depth 1 "${themis_dir}"
+	git clone "https://github.com/thinca/vim-themis" --quiet --branch "${version}" --depth 1 "${themis_dir}"
 elif [[ "${version}" = "master" ]]; then
 	(
 		cd "${themis_dir}"
