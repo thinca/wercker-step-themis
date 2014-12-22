@@ -2,3 +2,6 @@ box: wercker/default
 build:
   steps:
     - validate-wercker-step
+    - script:
+        name: Run test
+        code: ./test.sh
