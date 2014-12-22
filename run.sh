@@ -3,9 +3,9 @@
 set -eu
 
 version="${WERCKER_THEMIS_VERSION:-master}"
-test_dir="${WERCKER_THEMIS_TEST_DIR}"
+test_dir="${WERCKER_THEMIS_TEST_DIR:-}"
 reporter="${WERCKER_THEMIS_REPORTER:-dot}"
-runtimepath="${WERCKER_THEMIS_RUNTIMEPATH}"
+runtimepath="${WERCKER_THEMIS_RUNTIMEPATH:-}"
 themis_dir="${WERCKER_CACHE_DIR}/${WERCKER_STEP_NAME}/themis-${version}"
 
 cmd_args=("${themis_dir}/bin/themis" --reporter "${reporter}")
