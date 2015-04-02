@@ -1,5 +1,5 @@
 name: themis
-version: 1.1.1
+version: 1.2.0
 description: Run test for Vim script with themis
 keywords:
   - vim
