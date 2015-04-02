@@ -27,7 +27,7 @@ add_rtp "${runtimepath}"
 
 if [[ ! -d "${themis_dir}" ]]; then
 	mkdir -p "${themis_dir}"
-	git clone "https://github.com/thinca/vim-themis" --quiet --branch "${version}" --depth 1 "${themis_dir}"
+	git clone "https://github.com/thinca/vim-themis" -c "advice.detachedHead=false" --quiet --branch "${version}" --depth 1 "${themis_dir}"
 elif [[ "${version}" = "master" && "${itself}" != "true" ]]; then
 	(
 		cd "${themis_dir}"
