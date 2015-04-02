@@ -3,11 +3,11 @@
 set -eu
 
 run_test() {
-	export WERCKER_THEMIS_VERSION="$1"
-	export WERCKER_THEMIS_TEST_DIR="$2"
-	export WERCKER_THEMIS_REPORTER="$3"
-	export WERCKER_THEMIS_RUNTIMEPATH="$4"
-	export WERCKER_THEMIS_ITSELF="$5"
+	export WERCKER_THEMIS_VERSION="${1:-master}"
+	export WERCKER_THEMIS_TEST_DIR="${2}"
+	export WERCKER_THEMIS_REPORTER="${3:-dot}"
+	export WERCKER_THEMIS_RUNTIMEPATH="${4}"
+	export WERCKER_THEMIS_ITSELF="${5:-false}"
 
 	./run.sh
 }
