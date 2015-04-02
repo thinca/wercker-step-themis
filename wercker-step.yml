@@ -9,12 +9,14 @@ properties:
   version:
     type: string
     required: false
+    default: master
   test-dir:
     type: string
     required: false
   reporter:
     type: string
     required: false
+    default: dot
   runtimepath:
     type: string
     required: false

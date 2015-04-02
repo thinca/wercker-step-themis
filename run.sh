@@ -2,9 +2,9 @@
 
 set -eu
 
-version="${WERCKER_THEMIS_VERSION:-master}"
+version="${WERCKER_THEMIS_VERSION:-}"
 test_dir="${WERCKER_THEMIS_TEST_DIR:-}"
-reporter="${WERCKER_THEMIS_REPORTER:-dot}"
+reporter="${WERCKER_THEMIS_REPORTER:-}"
 runtimepath="${WERCKER_THEMIS_RUNTIMEPATH:-}"
 itself="${WERCKER_THEMIS_ITSELF:-}"
 
