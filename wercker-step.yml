@@ -18,3 +18,7 @@ properties:
   runtimepath:
     type: string
     required: false
+  itself:
+    type: boolean
+    required: false
+    default: false
